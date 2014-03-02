@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "x-log": "latest"
+    "x-log": "~0.0"
   },
   "description": "some parts of xui 2.3.2 used server side by x-x.io x-components",
   "keywords": [
