@@ -1,9 +1,9 @@
 {
   "name": "x-xui",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "x-log": "~0.0"
+    "x-log": "1.x.x"
   },
   "description": "some parts of xui 2.3.2 used server side by x-x.io x-components",
   "keywords": [
@@ -16,11 +16,12 @@
     "url": "https://github.com/x-component/x-xui.git"
   },
   "devDependencies": {
-    "dox-basic": "~0.0"
+    "x-publish": "1.x.x",
+    "vows" : "latest"
   },
   "main": "xui.js",
   "scripts": {
-    "prepublish": "cat ./xui.js | node ./node_modules/dox-basic/bin/dox-basic -m -t \"[![Build Status](https://travis-ci.org/x-component/$npm_package_name.png?v$npm_package_version)](https://travis-ci.org/x-component/$npm_package_name)\" > README.md",
+    "prepublish": "./node_modules/x-publish/scripts/prepublish.sh",
     "test": "vows ./test/*.test.js"
   }
 }

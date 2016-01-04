@@ -6,7 +6,7 @@
  * of a passed "window" object
  * afterwards window.$ and window.x$ refers to xui x$
  *
- * function F(window, function(err,window){...})
+ * function (window, function(err,window){...})
  * --------------------------------
  */
 'use strict';
